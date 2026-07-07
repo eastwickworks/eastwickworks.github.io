@@ -1,5 +1,8 @@
 # Eastwick Works — portfolio site
 
+**Live at: https://eastwickworks.github.io**
+(GitHub repo: https://github.com/eastwickworks/eastwickworks.github.io)
+
 Art portfolio of Geert Schoors. A single static page (`index.html`), the artwork
 list (`works.js`) and the images — no build step, no framework, nothing to install.
 

@@ -1,5 +1,8 @@
 # Eastwick Works portfolio site
 
+Live at https://eastwickworks.github.io (GitHub Pages, repo
+eastwickworks/eastwickworks.github.io, GitHub account `eastwickworks`, deploys from main).
+
 Static art-portfolio site for Geert Schoors (the user's father-figure/family; user = Elias).
 No build step. `index.html` (layout, CSS, JS, EN+NL texts in the `I18N` object) +
 `works.js` (artwork data) + `images/`.
