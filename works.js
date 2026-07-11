@@ -63,7 +63,7 @@ const WORKS = [
   { cat: "color", slug: "an-inconvenient-ruth", title: "An Inconvenient Ruth", h: "", w: "", sold: false },
   { cat: "color", slug: "bed-head", title: "Bed Head", h: "Height: 59.3 cm ; 23.3 in", w: "Width: 42 cm ; 16.5 in", sold: false },
   { cat: "color", slug: "blue-monday", title: "Blue Monday", h: "Height: 42 cm ; 16.5 in", w: "Width: 30 cm ; 11.8 in", sold: false },
-  { cat: "color", slug: "checkmate", title: "Checkmate", h: "Height: 36 cm ; 14.2 in", w: "Width: 37 cm ; 14.6 in", sold: false },
+  { cat: "color", slug: "checkmate", title: "Checkmate", h: "Height: 42 cm ; 16.5 in", w: "Width: 30 cm ; 11.8 in", sold: false },
   { cat: "color", slug: "clarks-day-off", title: "Clark's Day Off", h: "Height: 122 cm ; 48 in", w: "Width: 80 cm ; 31.5 in", sold: false },
   { cat: "color", slug: "eye-tooth", title: "Eye Tooth", h: "Height: 59.3 cm ; 23.3 in", w: "Width: 42 cm ; 16.5 in", sold: false },
   { cat: "color", slug: "fools-gold", title: "Fool's Gold", h: "Height: 42 cm ; 16.5 in", w: "Width: 30 cm ; 11.8 in", sold: false },
