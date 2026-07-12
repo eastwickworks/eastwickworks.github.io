@@ -241,4 +241,3 @@ const FEATURED = [
   "an-inconvenient-ruth",
   "lunch-time",
 ];
-Update site
