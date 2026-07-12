@@ -650,6 +650,16 @@ function openLightbox(ctx, i){
   updateLightbox();
 }
 
+/* Dutch measurement formatting: Hoogte/Breedte, cm only, comma decimals, no inch conversion */
+function fmtDim(s){
+  if (lang !== "nl") return s;
+  let d = s.split(";")[0]                       // drop the "; X in" conversion
+           .replace(/Height/i, "Hoogte")
+           .replace(/Width/i, "Breedte");
+  d = d.replace(/(\d)\.(\d)/g, "$1,$2");       // decimal point -> comma
+  return d.replace(/\s+/g, " ").trim();
+}
+
 function updateLightbox(){
   const w = lbList[lbIdx];
   if (!w) return;
@@ -657,7 +667,7 @@ function updateLightbox(){
   const img = document.getElementById("lb-img");
   img.src = `images/large/${w.slug}.jpg`;
   img.alt = `‘${w.title}’`;
-  const dims = [w.h, w.w].filter(Boolean).join("<br>");
+  const dims = [w.h, w.w].filter(Boolean).map(fmtDim).join("<br>");
   document.getElementById("lb-caption").innerHTML = `
     <div class="lb-title">‘${w.title}’</div>
     ${dims ? `<div class="lb-dims">${dims}</div>` : ""}
@@ -717,3 +727,4 @@ setLang(lang);
 
 </body>
 </html>
+update site
