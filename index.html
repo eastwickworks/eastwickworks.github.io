@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eastwick Works — Geert Schoors | Art Portfolio</title>
-<meta name="description" content="Eastwick Works (eastwickworks) — the art portfolio of Belgian artist Geert Schoors. Drawings and paintings on paper, in color and black & white.">
+<title>Eastwick Works | Geert Schoors · Art Portfolio</title>
+<meta name="description" content="Eastwick Works (eastwickworks): the art portfolio of Belgian visual artist Geert Schoors. Expressive faces, strange creatures, and everyday absurdities drawn and painted on paper.">
 <link rel="canonical" href="https://eastwickworks.github.io/">
-<meta property="og:title" content="Eastwick Works — Geert Schoors">
-<meta property="og:description" content="Drawings and paintings on paper, in color and black & white.">
+<meta property="og:title" content="Eastwick Works | Geert Schoors">
+<meta property="og:description" content="Drawings and paintings on paper, in bold colour and stark black & white.">
 <meta property="og:image" content="https://eastwickworks.github.io/images/hero.jpg">
 <meta property="og:url" content="https://eastwickworks.github.io/">
 <meta property="og:type" content="website">
@@ -24,524 +24,1663 @@
     "jobTitle": "Visual artist",
     "email": "eastwickworks@gmail.com",
     "address": { "@type": "PostalAddress", "postalCode": "2260", "addressLocality": "Westerlo", "addressCountry": "BE" },
-    "sameAs": ["https://www.instagram.com/schoorsg/"]
+    "sameAs": ["https://www.instagram.com/eastwick_works/", "https://www.instagram.com/schoorsg/"]
   }
 }
 </script>
 <link rel="icon" type="image/png" href="images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --paper:#F8F4F1;
-    --ink:#241812;
-    --brown:#411E06;
-    --sienna:#A05222;
-    --taupe:#9D897C;
-    --taupe-light:#CABFB6;
-    --serif:'Cormorant Garamond', Georgia, serif;
-    --sans:'Jost', 'Segoe UI', sans-serif;
+  :root {
+    /* Canonical Eastwick Works Brand Palette */
+    --paper: #F8F4F1;          /* Primary warm fine-art paper */
+    --paper-warm: #F2EDE8;     /* Marbled story-template cream */
+    --paper-deep: #E8E0D8;     /* Warm stone card border / subtle well */
+    --mat: #FCF9F7;            /* Museum passe-partout mat board */
+    --ink: #241812;            /* Deep charcoal-espresso body text */
+    --ink-deep: #150D08;       /* Gallery night / lightbox backdrop */
+    --brown: #411E06;          /* Signature Eastwick deep espresso */
+    --brown-soft: #5A2E10;     /* Warm espresso hover state */
+    --sienna: #A05222;         /* Burnt sienna accent */
+    --sienna-light: rgba(160, 82, 34, 0.12);
+    --bronze: #B88758;         /* Warm ochre / certificate gold accent */
+    --taupe: #857265;          /* Muted umber metadata & captions */
+    --taupe-light: #D2C7BE;    /* Architectural hairline rules */
+    --rule: rgba(65, 30, 6, 0.11);
+    --shadow-sm: 0 6px 20px rgba(36, 24, 18, 0.07);
+    --shadow-md: 0 16px 40px rgba(36, 24, 18, 0.13);
+    --shadow-lg: 0 28px 68px rgba(21, 13, 8, 0.24);
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --pad-x: clamp(1.25rem, 5vw, 5.5rem);
   }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto}
-    *,*::before,*::after{animation:none!important;transition:none!important}
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-  body{
-    background:var(--paper);
-    color:var(--ink);
-    font-family:var(--sans);
-    font-weight:300;
-    line-height:1.6;
-    overflow-x:hidden;
+  html {
+    scroll-behavior: smooth;
+    background: var(--paper);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-  /* subtle paper grain */
-  body::before{
-    content:"";
-    position:fixed;
-    inset:0;
-    pointer-events:none;
-    z-index:1;
-    opacity:.35;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.62 0 0 0 0 0.54 0 0 0 0 0.49 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation: none !important;
+      transition: none !important;
+    }
   }
-  a{color:var(--sienna);text-decoration:none}
-  img{max-width:100%;display:block}
-
-  /* ---------- header ---------- */
-  header{
-    position:fixed;top:0;left:0;right:0;z-index:50;
-    display:flex;align-items:center;gap:1rem;
-    padding:.6rem clamp(1rem,4vw,3rem);
-    background:rgba(248,244,241,.88);
-    backdrop-filter:blur(10px);
-    -webkit-backdrop-filter:blur(10px);
-    border-bottom:1px solid rgba(65,30,6,.08);
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-weight: 300;
+    line-height: 1.65;
+    overflow-x: hidden;
+    position: relative;
   }
-  .brand{display:flex;align-items:center;gap:.7rem;color:var(--brown)}
-  .brand img{width:42px;height:42px;object-fit:contain;flex-shrink:0}
-  .brand{flex-shrink:0}
-  .brand span{
-    font-family:var(--sans);font-weight:400;
-    letter-spacing:.32em;font-size:.82rem;text-transform:uppercase;
-    white-space:nowrap;
+  /* Subtle tactile cotton-paper grain */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.32;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.58 0 0 0 0 0.49 0 0 0 0 0.43 0 0 0 0.055 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
   }
-  nav{margin-left:auto;display:flex;align-items:center;gap:clamp(.9rem,2.5vw,2rem)}
-  nav a{
-    font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;
-    color:var(--ink);position:relative;padding:.2rem 0;
+  ::selection {
+    background: var(--brown);
+    color: var(--paper);
   }
-  nav a::after{
-    content:"";position:absolute;left:0;bottom:-2px;height:1px;width:0;
-    background:var(--sienna);transition:width .25s;
+  a {
+    color: inherit;
+    text-decoration: none;
   }
-  nav a:hover::after{width:100%}
-  .lang{
-    display:flex;gap:.4rem;font-size:.78rem;letter-spacing:.1em;
-    border-left:1px solid var(--taupe-light);padding-left:clamp(.9rem,2vw,1.6rem);
+  img {
+    max-width: 100%;
+    display: block;
   }
-  .lang button{
-    background:none;border:none;cursor:pointer;color:var(--taupe);
-    font-family:var(--sans);font-size:.78rem;letter-spacing:.1em;padding:.15rem .1rem;
+  button {
+    font-family: inherit;
   }
-  .lang button.active{color:var(--brown);border-bottom:1px solid var(--sienna)}
-
-  @media(max-width:1000px){
-    .brand span{display:none}
+  /* ================= HEADER & NAVIGATION ================= */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 60;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 0.75rem var(--pad-x);
+    background: rgba(248, 244, 241, 0.90);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--rule);
+    transition: padding 0.3s ease, box-shadow 0.3s ease;
   }
-  @media(max-width:640px){
-    nav{gap:.75rem}
-    nav a{font-size:.68rem;letter-spacing:.09em}
-    nav a[href="#featured"]{display:none}
-    .brand img{width:34px;height:34px}
-    .lang{padding-left:.75rem}
-    header{padding:.55rem .9rem}
+  header.scrolled {
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+    box-shadow: 0 4px 24px rgba(36, 24, 18, 0.06);
   }
-
-  /* ---------- hero ---------- */
-  #home{
-    min-height:100svh;
-    display:grid;
-    grid-template-columns:1.1fr .9fr;
-    align-items:center;
-    gap:clamp(2rem,5vw,5rem);
-    padding:clamp(6rem,12vh,8rem) clamp(1.4rem,6vw,6rem) clamp(3rem,6vh,4rem);
-    position:relative;
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    color: var(--brown);
+    flex-shrink: 0;
   }
-  .hero-text h1{
-    font-family:var(--serif);
-    font-weight:500;
-    font-size:clamp(2.6rem,6.5vw,5.2rem);
-    line-height:1.02;
-    color:var(--brown);
-    letter-spacing:.02em;
+  .brand-logo-wrap {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--paper-warm);
+    border: 1px solid rgba(65, 30, 6, 0.14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    transition: transform 0.35s ease, border-color 0.35s ease;
   }
-  .hero-text .byline{
-    margin-top:1.2rem;
-    font-size:.85rem;letter-spacing:.3em;text-transform:uppercase;
-    color:var(--taupe);
+  .brand:hover .brand-logo-wrap {
+    transform: rotate(-4deg) scale(1.04);
+    border-color: var(--sienna);
   }
-  .hero-text .lede{
-    margin-top:1.6rem;
-    font-family:var(--serif);
-    font-size:clamp(1.15rem,1.8vw,1.45rem);
-    font-style:italic;
-    color:var(--ink);
-    max-width:26em;
+  .brand img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
-  .hero-cta{margin-top:2.4rem;display:flex;gap:1.4rem;flex-wrap:wrap}
-  .btn{
-    display:inline-block;
-    font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;
-    padding:.85rem 1.9rem;
-    border:1px solid var(--brown);
-    color:var(--brown);
-    transition:background .25s,color .25s;
+  .brand-titles {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
   }
-  .btn:hover{background:var(--brown);color:var(--paper)}
-  .btn.accent{border-color:var(--sienna);color:var(--sienna)}
-  .btn.accent:hover{background:var(--sienna);color:var(--paper)}
-
-  .hero-art{position:relative;justify-self:center;max-width:min(44vw,520px)}
-  .hero-art::before{
-    content:"";position:absolute;inset:0;
-    transform:translate(14px,14px);
-    border:1px solid var(--sienna);
-    z-index:0;
+  .brand-name {
+    font-family: var(--sans);
+    font-weight: 500;
+    letter-spacing: 0.26em;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--brown);
   }
-  .hero-art img{
-    position:relative;z-index:1;
-    border:10px solid #fff;
-    box-shadow:0 18px 45px rgba(65,30,6,.22);
-    transform:rotate(-1.2deg);
+  .brand-sub {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 0.88rem;
+    color: var(--taupe);
+    letter-spacing: 0.02em;
   }
-  .hero-art figcaption{
-    margin-top:1rem;text-align:right;
-    font-family:var(--serif);font-style:italic;
-    font-size:.95rem;color:var(--taupe);
+  nav {
+    display: flex;
+    align-items: center;
+    gap: clamp(1rem, 2.4vw, 2.2rem);
   }
-  @media(max-width:820px){
-    #home{grid-template-columns:1fr;text-align:center;padding-top:6.5rem}
-    .hero-art{max-width:min(78vw,420px);margin:0 auto}
-    .hero-text .lede{margin-left:auto;margin-right:auto}
-    .hero-cta{justify-content:center}
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: clamp(0.9rem, 2.2vw, 2rem);
   }
-
-  /* ---------- sections ---------- */
-  section{position:relative;z-index:2;scroll-margin-top:72px}
-  .section-head{
-    display:flex;align-items:baseline;gap:1.2rem;
-    padding:0 clamp(1.4rem,6vw,6rem);
-    margin-bottom:1.8rem;
+  .nav-links a {
+    font-size: 0.74rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink);
+    position: relative;
+    padding: 0.3rem 0;
+    transition: color 0.25s ease;
   }
-  .section-head h2{
-    font-family:var(--serif);font-weight:500;
-    font-size:clamp(1.9rem,3.4vw,2.8rem);
-    color:var(--brown);white-space:nowrap;
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1.5px;
+    width: 0;
+    background: var(--sienna);
+    transition: width 0.28s cubic-bezier(0.22, 1, 0.36, 1);
   }
-  .section-head::after{
-    content:"";flex:1;height:1px;background:var(--taupe-light);
-    transform:translateY(-6px);
+  .nav-links a:hover {
+    color: var(--brown);
   }
-  .section-note{
-    padding:0 clamp(1.4rem,6vw,6rem);
-    max-width:62em;
-    color:var(--ink);
-    margin-bottom:2rem;
+  .nav-links a:hover::after {
+    width: 100%;
   }
-
-  /* ---------- featured strip ---------- */
-  #featured{padding:clamp(2rem,5vh,4rem) 0 clamp(3rem,6vh,5rem)}
-  .strip{
-    display:flex;gap:clamp(1.2rem,2.5vw,2.2rem);
-    overflow-x:auto;
-    padding:1rem clamp(1.4rem,6vw,6rem) 1.6rem;
-    scroll-snap-type:x proximity;
-    scroll-padding-left:clamp(1.4rem,6vw,6rem);
-    scrollbar-width:thin;
-    scrollbar-color:var(--taupe-light) transparent;
+  .lang-switch {
+    display: inline-flex;
+    align-items: center;
+    background: var(--paper-warm);
+    border: 1px solid rgba(65, 30, 6, 0.14);
+    border-radius: 999px;
+    padding: 0.18rem;
+    gap: 0.15rem;
   }
-  .strip figure{
-    flex:0 0 auto;
-    scroll-snap-align:start;
-    width:clamp(190px,24vw,260px);
-    cursor:pointer;
+  .lang-switch button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--taupe);
+    font-family: var(--sans);
+    font-weight: 500;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    padding: 0.26rem 0.65rem;
+    border-radius: 999px;
+    transition: all 0.22s ease;
   }
-  .strip img{
-    width:100%;height:clamp(240px,30vw,330px);object-fit:cover;
-    border:6px solid #fff;
-    box-shadow:0 10px 26px rgba(65,30,6,.16);
-    transition:transform .3s;
+  .lang-switch button:hover {
+    color: var(--brown);
   }
-  .strip figure:hover img{transform:translateY(-6px)}
-  .strip figcaption{
-    margin-top:.7rem;
-    font-family:var(--serif);font-style:italic;
-    font-size:1.02rem;color:var(--ink);
+  .lang-switch button.active {
+    background: var(--brown);
+    color: var(--paper);
+    box-shadow: 0 2px 6px rgba(65, 30, 6, 0.22);
   }
-
-  /* ---------- portfolio ---------- */
-  #portfolio{padding:clamp(3rem,7vh,5rem) 0}
-  .tabs{
-    display:flex;gap:.6rem;flex-wrap:wrap;
-    padding:0 clamp(1.4rem,6vw,6rem);
-    margin-bottom:2.2rem;
+  @media (max-width: 860px) {
+    .brand-sub { display: none; }
   }
-  .tab{
-    background:none;cursor:pointer;
-    font-family:var(--sans);font-weight:400;
-    font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;
-    color:var(--ink);
-    border:1px solid var(--taupe-light);
-    padding:.65rem 1.4rem;
-    transition:all .25s;
+  @media (max-width: 680px) {
+    header {
+      padding: 0.6rem 1rem;
+      gap: 0.6rem;
+    }
+    .brand-titles { display: none; }
+    .brand-logo-wrap { width: 38px; height: 38px; }
+    .nav-links { gap: 0.75rem; }
+    .nav-links a { font-size: 0.67rem; letter-spacing: 0.11em; }
+    .nav-links a[href="#featured"] { display: none; }
+    .lang-switch button { padding: 0.22rem 0.5rem; font-size: 0.66rem; }
   }
-  .tab small{color:var(--taupe);letter-spacing:.05em;margin-left:.45rem}
-  .tab:hover{border-color:var(--sienna)}
-  .tab.active{background:var(--brown);border-color:var(--brown);color:var(--paper)}
-  .tab.active small{color:var(--taupe-light)}
-
-  .grid{
-    columns:4 260px;
-    column-gap:1.3rem;
-    padding:0 clamp(1.4rem,6vw,6rem);
+  /* ================= HERO SECTION ================= */
+  #home {
+    position: relative;
+    z-index: 2;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(6.2rem, 11vh, 8.5rem) var(--pad-x) clamp(2.5rem, 5vh, 4rem);
+    border-bottom: 1px solid var(--rule);
+    background:
+      radial-gradient(ellipse 65% 55% at 78% 42%, rgba(160, 82, 34, 0.07), transparent 70%),
+      radial-gradient(ellipse 50% 50% at 15% 80%, rgba(65, 30, 6, 0.04), transparent 65%);
   }
-  .work{
-    break-inside:avoid;
-    margin-bottom:1.3rem;
-    cursor:pointer;
-    position:relative;
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.12fr 0.88fr;
+    align-items: center;
+    gap: clamp(2.4rem, 5.5vw, 5.5rem);
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
   }
-  .work img{
-    width:100%;
-    border:5px solid #fff;
-    box-shadow:0 6px 18px rgba(65,30,6,.12);
-    transition:box-shadow .3s;
+  .hero-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--sienna);
+    margin-bottom: 1.15rem;
   }
-  .work:hover img{box-shadow:0 12px 30px rgba(65,30,6,.24)}
-  .work .cap{
-    position:absolute;left:5px;right:5px;bottom:5px;
-    background:linear-gradient(transparent,rgba(36,24,18,.78));
-    color:#fff;
-    font-family:var(--serif);font-style:italic;font-size:1rem;
-    padding:1.6rem .8rem .55rem;
-    opacity:0;transition:opacity .3s;
-    pointer-events:none;
+  .hero-kicker::before {
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 1px;
+    background: var(--sienna);
   }
-  .work:hover .cap{opacity:1}
-  .work .sold-dot{
-    position:absolute;top:12px;right:12px;
-    background:var(--sienna);color:var(--paper);
-    font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;
-    padding:.25rem .55rem;
+  .hero-text h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(3.1rem, 7vw, 6rem);
+    line-height: 0.96;
+    color: var(--brown);
+    letter-spacing: -0.01em;
   }
-
-  /* ---------- profile ---------- */
-  #profile{padding:clamp(3rem,8vh,6rem) 0}
-  .profile-wrap{
-    display:grid;
-    grid-template-columns:auto 1fr;
-    gap:clamp(2rem,5vw,4.5rem);
-    align-items:start;
-    padding:0 clamp(1.4rem,6vw,6rem);
-    max-width:1100px;
+  .hero-text h1 em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--sienna);
   }
-  .profile-logo{width:clamp(150px,20vw,230px);opacity:.92}
-  .profile-text p{
-    font-family:var(--serif);
-    font-size:clamp(1.12rem,1.6vw,1.35rem);
-    line-height:1.7;
-    margin-bottom:1.1em;
-    max-width:34em;
+  .hero-byline {
+    margin-top: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    font-family: var(--serif);
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+    font-style: italic;
+    color: var(--taupe);
   }
-  .profile-text p:first-of-type::first-letter{
-    font-size:2.9em;float:left;line-height:.85;
-    padding-right:.09em;
-    color:var(--sienna);
+  .hero-byline span.dot {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--sienna);
+    opacity: 0.7;
   }
-  @media(max-width:700px){
-    .profile-wrap{grid-template-columns:1fr}
-    .profile-logo{margin:0 auto}
+  .hero-lede {
+    margin-top: 1.6rem;
+    font-family: var(--serif);
+    font-size: clamp(1.2rem, 1.75vw, 1.48rem);
+    line-height: 1.55;
+    color: var(--ink);
+    max-width: 31em;
   }
-
-  /* ---------- contact ---------- */
-  #contact{padding:clamp(3rem,8vh,6rem) 0 clamp(2rem,5vh,3rem)}
-  .contact-wrap{
-    text-align:center;
-    padding:0 clamp(1.4rem,6vw,6rem);
+  .hero-subnote {
+    margin-top: 0.9rem;
+    font-size: 0.92rem;
+    color: var(--taupe);
+    max-width: 38em;
   }
-  .contact-wrap .email{
-    display:inline-block;
-    font-family:var(--serif);
-    font-size:clamp(1.5rem,3.4vw,2.5rem);
-    color:var(--brown);
-    border-bottom:1px solid var(--sienna);
-    padding-bottom:.15em;
-    margin:.8rem 0 1.6rem;
-    transition:color .25s;
+  .hero-cta {
+    margin-top: 2.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    flex-wrap: wrap;
   }
-  .contact-wrap .email:hover{color:var(--sienna)}
-  .contact-wrap .place{color:var(--taupe);letter-spacing:.14em;text-transform:uppercase;font-size:.8rem}
-  .contact-wrap .insta{
-    display:inline-flex;align-items:center;gap:.5rem;
-    margin-top:1.6rem;
-    font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;
-    color:var(--ink);
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    padding: 0.95rem 2rem;
+    border: 1px solid var(--brown);
+    transition: all 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+    cursor: pointer;
   }
-  .contact-wrap .insta:hover{color:var(--sienna)}
-  .contact-wrap .insta svg{width:18px;height:18px}
-
-  footer{
-    margin-top:3rem;
-    padding:1.6rem clamp(1.4rem,6vw,6rem);
-    border-top:1px solid rgba(65,30,6,.1);
-    display:flex;align-items:center;gap:1rem;
-    font-size:.75rem;letter-spacing:.12em;color:var(--taupe);
+  .btn-primary {
+    background: var(--brown);
+    color: var(--paper);
+    box-shadow: 0 10px 26px rgba(65, 30, 6, 0.18);
   }
-  footer img{width:30px;height:30px;opacity:.8}
-  footer .foot-right{margin-left:auto}
-
-  /* ---------- lightbox ---------- */
-  #lightbox{
-    position:fixed;inset:0;z-index:100;
-    background:rgba(24,15,9,.96);
-    display:none;
-    align-items:center;justify-content:center;
-    flex-direction:column;
-    padding:1rem;
+  .btn-primary:hover {
+    background: var(--sienna);
+    border-color: var(--sienna);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px rgba(160, 82, 34, 0.25);
   }
-  #lightbox.open{display:flex}
-  #lb-img{
-    max-width:min(92vw,1000px);
-    max-height:74vh;
-    object-fit:contain;
-    border:8px solid #fff;
-    box-shadow:0 30px 80px rgba(0,0,0,.5);
+  .btn-outline {
+    background: transparent;
+    color: var(--brown);
+    border-color: rgba(65, 30, 6, 0.35);
   }
-  #lb-caption{
-    margin-top:1.1rem;text-align:center;color:var(--paper);
-    max-width:90vw;
+  .btn-outline:hover {
+    border-color: var(--brown);
+    background: var(--paper-warm);
+    transform: translateY(-2px);
   }
-  #lb-caption .lb-title{
-    font-family:var(--serif);font-style:italic;
-    font-size:clamp(1.3rem,2.6vw,1.8rem);
+  /* Hero Stats Ribbon */
+  .hero-stats {
+    margin-top: 2.8rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: start;
+    gap: clamp(1.3rem, 3vw, 2.8rem);
   }
-  #lb-caption .lb-dims{
-    margin-top:.35rem;
-    font-size:.82rem;letter-spacing:.08em;color:var(--taupe-light);
-    line-height:1.5;
+  .stat-item {
+    display: flex;
+    flex-direction: column;
   }
-  #lb-caption .lb-sold{
-    display:inline-block;margin-top:.55rem;
-    background:var(--sienna);color:var(--paper);
-    font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;
-    padding:.3rem .8rem;
+  .stat-num {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(1.55rem, 2.3vw, 2.1rem);
+    line-height: 1.05;
+    color: var(--brown);
   }
-  #lb-caption .lb-count{
-    margin-top:.6rem;font-size:.7rem;letter-spacing:.2em;color:var(--taupe);
+  .stat-label {
+    margin-top: 0.2rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--taupe);
   }
-  .lb-btn{
-    position:absolute;
-    background:none;border:none;cursor:pointer;
-    color:var(--paper);
-    font-size:2.2rem;line-height:1;
-    padding:1rem;
-    opacity:.7;transition:opacity .2s;
-    font-family:Georgia,serif;
-    user-select:none;
+  /* Hero Framed Artwork */
+  .hero-stage {
+    position: relative;
+    justify-self: center;
+    width: 100%;
+    max-width: min(44vw, 500px);
   }
-  .lb-btn:hover{opacity:1}
-  #lb-close{top:.6rem;right:.9rem;font-size:1.9rem}
-  #lb-prev{left:.4rem;top:50%;transform:translateY(-50%)}
-  #lb-next{right:.4rem;top:50%;transform:translateY(-50%)}
-  @media(max-width:640px){
-    #lb-prev,#lb-next{top:auto;bottom:.4rem;transform:none}
-    #lb-img{max-height:64vh}
+  /* Offset architectural frame line */
+  .hero-stage::before {
+    content: "";
+    position: absolute;
+    inset: -12px -12px 28px 16px;
+    border: 1px solid rgba(160, 82, 34, 0.38);
+    pointer-events: none;
+    z-index: 0;
   }
-
-  /* ---------- reveal on scroll ---------- */
-  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
-  .reveal.in{opacity:1;transform:none}
+  .hero-frame {
+    position: relative;
+    z-index: 1;
+    background: var(--mat);
+    padding: clamp(14px, 2.2vw, 24px);
+    border: 1px solid rgba(65, 30, 6, 0.18);
+    box-shadow: var(--shadow-lg), inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s ease;
+  }
+  .hero-frame:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 34px 80px rgba(21, 13, 8, 0.30);
+  }
+  .hero-mat-inner {
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 2px 6px rgba(36, 24, 18, 0.18);
+    border: 1px solid rgba(65, 30, 6, 0.10);
+  }
+  .hero-mat-inner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .hero-frame:hover .hero-mat-inner img {
+    transform: scale(1.02);
+  }
+  .hero-placard {
+    margin-top: 1rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: var(--paper-warm);
+    border-left: 2px solid var(--sienna);
+  }
+  .hero-placard-title {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--brown);
+  }
+  .hero-placard-meta {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--taupe);
+  }
+  @media (max-width: 920px) {
+    .hero-grid {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 2.8rem;
+    }
+    .hero-kicker { margin-left: auto; margin-right: auto; }
+    .hero-byline { justify-content: center; }
+    .hero-lede, .hero-subnote { margin-left: auto; margin-right: auto; }
+    .hero-cta { justify-content: center; }
+    .hero-stats {
+      justify-content: center;
+      grid-template-columns: repeat(2, minmax(110px, auto));
+      gap: 1.2rem 2.5rem;
+    }
+    .Hero-stage, .hero-stage {
+      max-width: min(82vw, 430px);
+    }
+  }
+  /* ================= SECTION HEADERS ================= */
+  section {
+    position: relative;
+    z-index: 2;
+    scroll-margin-top: 68px;
+  }
+  .section-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 var(--pad-x);
+  }
+  .section-eyebrow {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--sienna);
+    margin-bottom: 0.45rem;
+    display: block;
+  }
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding-bottom: 1.15rem;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 1.6rem;
+  }
+  .section-head h2 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(2.1rem, 3.8vw, 3.2rem);
+    line-height: 1.08;
+    color: var(--brown);
+  }
+  .section-sub {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(1.08rem, 1.5vw, 1.28rem);
+    color: var(--taupe);
+  }
+  /* ================= FEATURED EXHIBITION STRIP ================= */
+  #featured {
+    background: linear-gradient(180deg, var(--brown) 0%, var(--ink) 100%);
+    color: var(--paper);
+    padding: clamp(3.8rem, 8vh, 6rem) 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
+    overflow: hidden;
+  }
+  /* Subtle warm spotlight on the dark exhibition wall */
+  #featured::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 25% 15%, rgba(160, 82, 34, 0.18), transparent 55%);
+    pointer-events: none;
+  }
+  #featured .section-eyebrow {
+    color: var(--bronze);
+  }
+  #featured .section-head {
+    border-bottom-color: rgba(248, 244, 241, 0.14);
+  }
+  #featured .section-head h2 {
+    color: var(--paper);
+  }
+  .featured-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .strip-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(248, 244, 241, 0.25);
+    background: rgba(248, 244, 241, 0.05);
+    color: var(--paper);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    transition: all 0.22s ease;
+  }
+  .strip-btn:hover {
+    background: var(--sienna);
+    border-color: var(--sienna);
+    transform: scale(1.05);
+  }
+  .featured-intro {
+    color: rgba(248, 244, 241, 0.78);
+    max-width: 54em;
+    margin-bottom: 2.2rem;
+    font-size: 0.98rem;
+  }
+  .strip-wrapper {
+    position: relative;
+  }
+  .strip {
+    display: flex;
+    gap: clamp(1.3rem, 2.5vw, 2.2rem);
+    overflow-x: auto;
+    padding: 0.6rem var(--pad-x) 2rem;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: var(--pad-x);
+    scrollbar-width: thin;
+    scrollbar-color: var(--bronze) rgba(255, 255, 255, 0.06);
+  }
+  .strip::-webkit-scrollbar {
+    height: 6px;
+  }
+  .strip::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.06);
+  }
+  .strip::-webkit-scrollbar-thumb {
+    background: var(--bronze);
+    border-radius: 3px;
+  }
+  .feat-card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: clamp(240px, 26vw, 315px);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    group: true;
+  }
+  .feat-mat {
+    background: var(--mat);
+    padding: 14px;
+    height: clamp(280px, 31vw, 360px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.42);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    position: relative;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+  }
+  .feat-card:hover .feat-mat {
+    transform: translateY(-7px);
+    box-shadow: 0 26px 54px rgba(0, 0, 0, 0.58);
+  }
+  .feat-mat img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 2px 10px rgba(36, 24, 18, 0.14);
+  }
+  .feat-num {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    font-size: 0.64rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    color: var(--taupe);
+    background: rgba(248, 244, 241, 0.9);
+    padding: 0.15rem 0.45rem;
+  }
+  .feat-sold {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: var(--sienna);
+    color: var(--paper);
+    font-size: 0.58rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+  }
+  .feat-meta {
+    margin-top: 0.95rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0 0.15rem;
+  }
+  .feat-title {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--paper);
+    transition: color 0.22s ease;
+  }
+  .feat-card:hover .feat-title {
+    color: var(--bronze);
+  }
+  .feat-dims {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: rgba(248, 244, 241, 0.58);
+    white-space: nowrap;
+  }
+  /* ================= PORTFOLIO SECTION ================= */
+  #portfolio {
+    padding: clamp(4rem, 9vh, 6.5rem) 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .portfolio-note {
+    max-width: 58em;
+    color: var(--ink);
+    font-size: clamp(0.98rem, 1.15vw, 1.08rem);
+    margin-bottom: 2.2rem;
+  }
+  /* Curator Filter & Search Toolbar */
+  .curator-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    background: var(--paper-warm);
+    border: 1px solid rgba(65, 30, 6, 0.12);
+    padding: 0.85rem 1.1rem;
+    margin-bottom: 2.4rem;
+    position: sticky;
+    top: 66px;
+    z-index: 35;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(36, 24, 18, 0.05);
+  }
+  .tabs {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .tab {
+    background: transparent;
+    cursor: pointer;
+    font-family: var(--sans);
+    font-weight: 400;
+    font-size: 0.76rem;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: var(--ink);
+    border: 1px solid rgba(65, 30, 6, 0.18);
+    padding: 0.6rem 1.2rem;
+    transition: all 0.22s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .tab small {
+    font-size: 0.68rem;
+    color: var(--taupe);
+    letter-spacing: 0.04em;
+    font-weight: 500;
+  }
+  .tab:hover {
+    border-color: var(--sienna);
+    color: var(--brown);
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .tab.active {
+    background: var(--brown);
+    border-color: var(--brown);
+    color: var(--paper);
+    box-shadow: 0 4px 12px rgba(65, 30, 6, 0.18);
+  }
+  .tab.active small {
+    color: var(--bronze);
+  }
+  .curator-tools {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-left: auto;
+  }
+  .search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .search-box svg {
+    position: absolute;
+    left: 0.75rem;
+    width: 15px;
+    height: 15px;
+    color: var(--taupe);
+    pointer-events: none;
+  }
+  .search-box input {
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid rgba(65, 30, 6, 0.18);
+    padding: 0.52rem 2rem 0.52rem 2.2rem;
+    width: clamp(170px, 20vw, 240px);
+    outline: none;
+    transition: border-color 0.22s ease, box-shadow 0.22s ease;
+  }
+  .search-box input::placeholder {
+    color: var(--taupe);
+  }
+  .search-box input:focus {
+    border-color: var(--sienna);
+    box-shadow: 0 0 0 3px rgba(160, 82, 34, 0.12);
+  }
+  .search-clear {
+    position: absolute;
+    right: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--taupe);
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.2rem;
+    display: none;
+  }
+  .search-clear.visible {
+    display: block;
+  }
+  .density-toggle {
+    display: flex;
+    border: 1px solid rgba(65, 30, 6, 0.18);
+    background: var(--paper);
+  }
+  .density-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.48rem 0.65rem;
+    color: var(--taupe);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+  }
+  .density-btn:hover {
+    color: var(--brown);
+  }
+  .density-btn.active {
+    background: var(--brown);
+    color: var(--paper);
+  }
+  .density-btn svg {
+    width: 15px;
+    height: 15px;
+  }
+  @media (max-width: 760px) {
+    .curator-bar {
+      position: static;
+      padding: 0.8rem;
+    }
+    .curator-tools {
+      width: 100%;
+      justify-content: space-between;
+    }
+    .search-box {
+      flex: 1;
+    }
+    .search-box input {
+      width: 100%;
+    }
+    .density-toggle {
+      display: none;
+    }
+  }
+  /* Row-Ordered Masonry Columns */
+  .masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--cols, 4), minmax(0, 1fr));
+    gap: clamp(1.1rem, 2vw, 1.75rem);
+    align-items: start;
+  }
+  .masonry-col {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.1rem, 2vw, 1.75rem);
+  }
+  .work-card {
+    background: var(--mat);
+    border: 1px solid rgba(65, 30, 6, 0.11);
+    padding: 12px 12px 14px;
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+    transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.32s ease, border-color 0.32s ease;
+    position: relative;
+  }
+  .work-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(160, 82, 34, 0.38);
+  }
+  .work-img-wrap {
+    position: relative;
+    overflow: hidden;
+    background: var(--paper-warm);
+    border: 1px solid rgba(65, 30, 6, 0.07);
+  }
+  .work-img-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .work-card:hover .work-img-wrap img {
+    transform: scale(1.025);
+  }
+  .work-sold-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--sienna);
+    color: var(--paper);
+    font-size: 0.6rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 0.24rem 0.58rem;
+    box-shadow: 0 4px 12px rgba(21, 13, 8, 0.25);
+  }
+  .work-placard {
+    margin-top: 0.75rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.6rem;
+    padding: 0 0.2rem;
+  }
+  .work-title-group {
+    display: flex;
+    align-items: baseline;
+    gap: 0.45rem;
+    min-width: 0;
+  }
+  .work-idx {
+    font-size: 0.64rem;
+    letter-spacing: 0.12em;
+    color: var(--taupe);
+    flex-shrink: 0;
+  }
+  .work-title {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.08rem;
+    color: var(--brown);
+    line-height: 1.25;
+    transition: color 0.2s ease;
+  }
+  .work-card:hover .work-title {
+    color: var(--sienna);
+  }
+  .work-size-pill {
+    font-size: 0.68rem;
+    letter-spacing: 0.05em;
+    color: var(--taupe);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 4rem 1.5rem;
+    background: var(--paper-warm);
+    border: 1px dashed var(--taupe-light);
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.35rem;
+    color: var(--taupe);
+  }
+  /* ================= PROFILE / THE ARTIST ================= */
+  #profile {
+    padding: clamp(4.5rem, 10vh, 7rem) 0;
+    background: linear-gradient(180deg, var(--paper) 0%, var(--paper-warm) 100%);
+    border-bottom: 1px solid var(--rule);
+  }
+  .profile-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: clamp(2.5rem, 6vw, 5.5rem);
+    align-items: start;
+  }
+  .profile-emblem-card {
+    background: var(--mat);
+    border: 1px solid rgba(65, 30, 6, 0.14);
+    padding: clamp(1.8rem, 3.5vw, 3rem);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .profile-logo {
+    width: clamp(170px, 22vw, 250px);
+    height: auto;
+    margin-bottom: 1.6rem;
+  }
+  .profile-quote {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(1.18rem, 1.5vw, 1.38rem);
+    line-height: 1.45;
+    color: var(--brown);
+    padding-top: 1.3rem;
+    border-top: 1px solid var(--rule);
+  }
+  .profile-facts {
+    margin-top: 1.6rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.9rem;
+    text-align: left;
+    padding-top: 1.3rem;
+    border-top: 1px solid var(--rule);
+  }
+  .fact-box span.fact-k {
+    display: block;
+    font-size: 0.64rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--taupe);
+  }
+  .fact-box span.fact-v {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 1.02rem;
+    color: var(--ink);
+  }
+  .profile-story {
+    padding-top: 0.3rem;
+  }
+  .profile-story p {
+    font-family: var(--serif);
+    font-size: clamp(1.18rem, 1.6vw, 1.42rem);
+    line-height: 1.72;
+    color: var(--ink);
+    margin-bottom: 1.25em;
+  }
+  .profile-story p:first-of-type::first-letter {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 3.2em;
+    float: left;
+    line-height: 0.82;
+    padding-right: 0.11em;
+    padding-top: 0.04em;
+    color: var(--sienna);
+  }
+  .profile-signature {
+    margin-top: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--brown);
+  }
+  .profile-signature::before {
+    content: "";
+    width: 36px;
+    height: 1px;
+    background: var(--sienna);
+  }
+  @media (max-width: 860px) {
+    .profile-grid {
+      grid-template-columns: 1fr;
+    }
+    .profile-emblem-card {
+      max-width: 520px;
+      margin: 0 auto;
+    }
+  }
+  /* ================= CONTACT & INQUIRIES ================= */
+  #contact {
+    padding: clamp(4.5rem, 9vh, 6.5rem) 0 clamp(3rem, 6vh, 4.5rem);
+  }
+  .contact-card {
+    background: var(--brown);
+    color: var(--paper);
+    padding: clamp(2.5rem, 5vw, 4.5rem);
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: center;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+  }
+  .contact-card::before {
+    content: "";
+    position: absolute;
+    inset: 12px;
+    border: 1px solid rgba(248, 244, 241, 0.14);
+    pointer-events: none;
+  }
+  .contact-left .section-eyebrow {
+    color: var(--bronze);
+  }
+  .contact-left h2 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(2.1rem, 3.8vw, 3.1rem);
+    line-height: 1.08;
+    color: var(--paper);
+    margin-bottom: 1rem;
+  }
+  .contact-note {
+    font-family: var(--serif);
+    font-size: clamp(1.12rem, 1.5vw, 1.32rem);
+    line-height: 1.6;
+    color: rgba(248, 244, 241, 0.84);
+    max-width: 34em;
+  }
+  .contact-email-row {
+    margin-top: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .contact-email {
+    font-family: var(--serif);
+    font-size: clamp(1.35rem, 2.5vw, 2.05rem);
+    color: var(--paper);
+    border-bottom: 1.5px solid var(--sienna);
+    padding-bottom: 0.12em;
+    transition: color 0.22s ease, border-color 0.22s ease;
+  }
+  .contact-email:hover {
+    color: var(--bronze);
+    border-color: var(--bronze);
+  }
+  .copy-btn {
+    background: rgba(248, 244, 241, 0.10);
+    border: 1px solid rgba(248, 244, 241, 0.26);
+    color: var(--paper);
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 0.5rem 0.95rem;
+    cursor: pointer;
+    transition: all 0.22s ease;
+  }
+  .copy-btn:hover {
+    background: var(--sienna);
+    border-color: var(--sienna);
+  }
+  .contact-right {
+    background: rgba(21, 13, 8, 0.36);
+    border: 1px solid rgba(248, 244, 241, 0.14);
+    padding: clamp(1.6rem, 3vw, 2.4rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1.35rem;
+  }
+  .contact-detail-block span.cd-k {
+    display: block;
+    font-size: 0.66rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--bronze);
+    margin-bottom: 0.25rem;
+  }
+  .contact-detail-block p,
+  .contact-detail-block a {
+    font-family: var(--serif);
+    font-size: 1.22rem;
+    color: var(--paper);
+  }
+  .insta-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--paper);
+    transition: color 0.22s ease;
+  }
+  .insta-link:hover {
+    color: var(--bronze);
+  }
+  .insta-link svg {
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+  }
+  @media (max-width: 860px) {
+    .contact-card {
+      grid-template-columns: 1fr;
+    }
+  }
+  /* ================= FOOTER ================= */
+  footer {
+    position: relative;
+    z-index: 2;
+    padding: 2rem var(--pad-x);
+    border-top: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--taupe);
+  }
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  footer img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.85;
+  }
+  /* ================= LIGHTBOX (VIEWING ROOM) ================= */
+  #lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 120;
+    background: rgba(21, 13, 8, 0.96);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: clamp(0.8rem, 2vw, 1.5rem);
+  }
+  #lightbox.open {
+    display: flex;
+  }
+  .lb-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    color: rgba(248, 244, 241, 0.75);
+    font-size: 0.74rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+  .lb-top-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+  }
+  .lb-tool-btn {
+    background: rgba(248, 244, 241, 0.08);
+    border: 1px solid rgba(248, 244, 241, 0.2);
+    color: var(--paper);
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    padding: 0.42rem 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .lb-tool-btn:hover {
+    background: var(--sienna);
+    border-color: var(--sienna);
+  }
+  .lb-stage {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+    margin: 0.5rem 0;
+  }
+  .lb-art-frame {
+    background: var(--mat);
+    padding: 14px;
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.65);
+    transition: padding 0.25s ease, background 0.25s ease;
+    max-width: min(90vw, 1080px);
+    max-height: 68vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .lb-art-frame.unframed {
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+  }
+  #lb-img {
+    max-width: min(86vw, 1040px);
+    max-height: calc(68vh - 28px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+  .lb-art-frame.unframed #lb-img {
+    max-height: 70vh;
+  }
+  .lb-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(248, 244, 241, 0.08);
+    border: 1px solid rgba(248, 244, 241, 0.2);
+    color: var(--paper);
+    font-size: 1.7rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+  .lb-nav-btn:hover {
+    background: var(--sienna);
+    border-color: var(--sienna);
+  }
+  #lb-prev { left: clamp(0.2rem, 1.5vw, 1.2rem); }
+  #lb-next { right: clamp(0.2rem, 1.5vw, 1.2rem); }
+  #lb-caption {
+    text-align: center;
+    color: var(--paper);
+    max-width: 720px;
+    margin: 0 auto;
+    padding-bottom: 0.25rem;
+  }
+  .lb-title {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(1.4rem, 2.5vw, 1.95rem);
+    color: var(--paper);
+  }
+  .lb-dims {
+    margin-top: 0.3rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    color: var(--taupe-light);
+    line-height: 1.5;
+  }
+  .lb-status-row {
+    margin-top: 0.55rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.85rem;
+    flex-wrap: wrap;
+  }
+  .lb-sold {
+    display: inline-block;
+    background: var(--sienna);
+    color: var(--paper);
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.85rem;
+  }
+  .lb-inquire {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--bronze);
+    border-bottom: 1px solid rgba(184, 135, 88, 0.45);
+    padding-bottom: 0.1rem;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  .lb-inquire:hover {
+    color: var(--paper);
+    border-color: var(--paper);
+  }
+  @media (max-width: 640px) {
+    .lb-art-frame { padding: 8px; max-height: 60vh; }
+    #lb-img { max-height: calc(60vh - 16px); }
+    .lb-nav-btn {
+      top: auto;
+      bottom: 0.5rem;
+      transform: none;
+      width: 42px;
+      height: 42px;
+    }
+  }
+  /* ================= REVEAL ANIMATION ================= */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.65s ease, transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: none;
+  }
 </style>
 </head>
 <body>
-
-<header>
-  <a class="brand" href="#home" aria-label="Eastwick Works — home">
-    <img src="images/logo.png" alt="Eastwick Works logo">
-    <span>Eastwick&nbsp;Works</span>
+<header id="site-header">
+  <a class="brand" href="#home" aria-label="Eastwick Works home">
+    <div class="brand-logo-wrap">
+      <img src="images/logo.png" alt="Eastwick Works logo" onerror="imgFallback(this)">
+    </div>
+    <div class="brand-titles">
+      <span class="brand-name">Eastwick&nbsp;Works</span>
+      <span class="brand-sub">Geert Schoors</span>
+    </div>
   </a>
   <nav>
-    <a href="#featured" data-i18n="nav_featured">Featured</a>
-    <a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a>
-    <a href="#profile" data-i18n="nav_profile">Profile</a>
-    <a href="#contact" data-i18n="nav_contact">Contact</a>
-    <div class="lang" role="group" aria-label="Language">
+    <div class="nav-links">
+      <a href="#featured" data-i18n="nav_featured">Featured</a>
+      <a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a>
+      <a href="#profile" data-i18n="nav_profile">The Artist</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </div>
+    <div class="lang-switch" role="group" aria-label="Language">
       <button id="lang-en" onclick="setLang('en')">EN</button>
-      <span style="color:var(--taupe-light)">/</span>
       <button id="lang-nl" onclick="setLang('nl')">NL</button>
     </div>
   </nav>
 </header>
-
 <!-- ============ HERO ============ -->
 <section id="home">
-  <div class="hero-text">
-    <h1>Eastwick<br>Works</h1>
-    <p class="byline" data-i18n="hero_by">by Geert Schoors</p>
-    <p class="lede" data-i18n="hero_lede">Drawings and paintings on paper — expressive faces, strange creatures and everyday scenes, in color and black &amp; white.</p>
-    <div class="hero-cta">
-      <a class="btn" href="#portfolio" data-i18n="hero_cta1">View the portfolio</a>
-      <a class="btn accent" href="#contact" data-i18n="hero_cta2">Get in touch</a>
+  <div class="hero-grid">
+    <div class="hero-text">
+      <span class="hero-kicker" data-i18n="hero_kicker">Studio Archive · Westerlo, Belgium</span>
+      <h1>Eastwick<br><em>Works</em></h1>
+      <p class="hero-byline">
+        <span data-i18n="hero_by">by Geert Schoors</span>
+        <span class="dot"></span>
+        <span data-i18n="hero_medium">Works on Paper</span>
+      </p>
+      <p class="hero-lede" data-i18n="hero_lede">Expressive faces, strange creatures, and everyday absurdities. Drawn and painted on paper, in bold colour and stark black &amp; white.</p>
+      <p class="hero-subnote" data-i18n="hero_subnote">Every character starts as an impulse on blank paper and stays until it looks back with a story of its own.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#portfolio" data-i18n="hero_cta1">Explore the Collection</a>
+        <a class="btn btn-outline" href="#contact" data-i18n="hero_cta2">Inquire &amp; Contact</a>
+      </div>
+      <div class="hero-stats" id="hero-stats"></div>
     </div>
+    <figure class="hero-stage reveal">
+      <div class="hero-frame" onclick="openHeroLightbox()" role="button" tabindex="0" aria-label="View True Colors in full screen">
+        <div class="hero-mat-inner">
+          <img src="images/hero.jpg" alt="‘True Colors’ pastel portrait by Geert Schoors" onerror="imgFallback(this)">
+        </div>
+        <figcaption class="hero-placard">
+          <span class="hero-placard-title">‘True Colors’</span>
+          <span class="hero-placard-meta" data-i18n="hero_caption_meta">Pastel on paper · Signature piece</span>
+        </figcaption>
+      </div>
+    </figure>
   </div>
-  <figure class="hero-art reveal">
-    <img src="images/hero.jpg" alt="True Colors — pastel portrait by Geert Schoors">
-    <figcaption>‘True Colors’</figcaption>
-  </figure>
 </section>
-
 <!-- ============ FEATURED ============ -->
 <section id="featured">
-  <div class="section-head reveal"><h2 data-i18n="featured_h">From the collection</h2></div>
-  <div class="strip" id="featured-strip"></div>
+  <div class="section-container">
+    <span class="section-eyebrow reveal" data-i18n="featured_eyebrow">Curated Highlights</span>
+    <div class="section-head reveal">
+      <h2 data-i18n="featured_h">From the Collection</h2>
+      <div class="featured-controls">
+        <button class="strip-btn" onclick="scrollFeatured(-1)" aria-label="Scroll left">‹</button>
+        <button class="strip-btn" onclick="scrollFeatured(1)" aria-label="Scroll right">›</button>
+      </div>
+    </div>
+    <p class="featured-intro reveal" data-i18n="featured_note">Eight personal favourites from the studio. A quick introduction to the faces, figures, and dry humour that run through the archive.</p>
+  </div>
+  <div class="strip-wrapper">
+    <div class="strip" id="featured-strip"></div>
+  </div>
 </section>
-
 <!-- ============ PORTFOLIO ============ -->
 <section id="portfolio">
-  <div class="section-head reveal"><h2 data-i18n="portfolio_h">Portfolio</h2></div>
-  <p class="section-note reveal" data-i18n="portfolio_note">Welcome to my portfolio. Here you can find a selection of the works I have completed, ranging wildly in size, color, materials and level of detail. All drawings and paintings are done on paper. Click on a work to see its title and dimensions.</p>
-  <div class="tabs reveal" id="tabs"></div>
-  <div class="grid" id="grid"></div>
+  <div class="section-container">
+    <span class="section-eyebrow reveal" data-i18n="portfolio_eyebrow">Complete Archive</span>
+    <div class="section-head reveal">
+      <h2 data-i18n="portfolio_h">Portfolio</h2>
+      <span class="section-sub" id="portfolio-summary"></span>
+    </div>
+    <p class="portfolio-note reveal" data-i18n="portfolio_note">Every piece here lives on paper, though rarely quietly. From pocket-sized ink sketches to metre-wide pastel and mixed-media works, nothing follows a fixed formula for long. Browse by category or search by title, and click any work for its full view and exact dimensions.</p>
+    <div class="curator-bar reveal">
+      <div class="tabs" id="tabs" role="tablist"></div>
+      <div class="curator-tools">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <input type="search" id="search-input" oninput="onSearchInput(this.value)" placeholder="Search by title...">
+          <button class="search-clear" id="search-clear" onclick="clearSearch()" aria-label="Clear search">×</button>
+        </div>
+        <div class="density-toggle" role="group" aria-label="Grid layout density">
+          <button class="density-btn" id="cols-3" onclick="setCols(3)" title="Gallery view (3 columns)">
+            <svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="5" height="16" rx="1"/><rect x="9.5" y="4" width="5" height="16" rx="1"/><rect x="16" y="4" width="5" height="16" rx="1"/></svg>
+          </button>
+          <button class="density-btn active" id="cols-4" onclick="setCols(4)" title="Archive view (4 columns)">
+            <svg viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="4" width="3.8" height="16" rx="0.8"/><rect x="7.4" y="4" width="3.8" height="16" rx="0.8"/><rect x="12.8" y="4" width="3.8" height="16" rx="0.8"/><rect x="18.2" y="4" width="3.8" height="16" rx="0.8"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="masonry-grid" id="grid"></div>
+  </div>
 </section>
-
 <!-- ============ PROFILE ============ -->
 <section id="profile">
-  <div class="section-head reveal"><h2 data-i18n="profile_h">Profile</h2></div>
-  <div class="profile-wrap reveal">
-    <img class="profile-logo" src="images/logo.png" alt="Eastwick Works — Geert Schoors logo">
-    <div class="profile-text" id="bio"></div>
+  <div class="section-container">
+    <span class="section-eyebrow reveal" data-i18n="profile_eyebrow">Behind the Paper</span>
+    <div class="section-head reveal">
+      <h2 data-i18n="profile_h">The Artist</h2>
+      <span class="section-sub">Geert Schoors</span>
+    </div>
+    <div class="profile-grid reveal">
+      <aside class="profile-emblem-card">
+        <img class="profile-logo" src="images/logo.png" alt="Eastwick Works · Geert Schoors emblem" onerror="imgFallback(this)">
+        <blockquote class="profile-quote" data-i18n="profile_quote">“Once I discovered I like to draw, blank paper stopped being safe.”</blockquote>
+        <div class="profile-facts">
+          <div class="fact-box">
+            <span class="fact-k" data-i18n="fact_medium_k">Surface</span>
+            <span class="fact-v" data-i18n="fact_medium_v">100% Paper</span>
+          </div>
+          <div class="fact-box">
+            <span class="fact-k" data-i18n="fact_academy_k">Training</span>
+            <span class="fact-v" data-i18n="fact_academy_v">Fine Arts, Herentals</span>
+          </div>
+          <div class="fact-box">
+            <span class="fact-k" data-i18n="fact_studio_k">Studio</span>
+            <span class="fact-v">Westerlo, BE</span>
+          </div>
+          <div class="fact-box">
+            <span class="fact-k" data-i18n="fact_archive_k">Collection</span>
+            <span class="fact-v" id="fact-count">218 Works</span>
+          </div>
+        </div>
+      </aside>
+      <div class="profile-story">
+        <div id="bio"></div>
+        <div class="profile-signature">Geert Schoors</div>
+      </div>
+    </div>
   </div>
 </section>
-
 <!-- ============ CONTACT ============ -->
 <section id="contact">
-  <div class="section-head reveal"><h2 data-i18n="contact_h">Contact</h2></div>
-  <div class="contact-wrap reveal">
-    <p class="place">2260 Westerlo — <span data-i18n="country">Belgium</span></p>
-    <a class="email" href="mailto:eastwickworks@gmail.com">eastwickworks@gmail.com</a>
-    <br>
-    <a class="insta" href="https://www.instagram.com/schoorsg/" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>
-      @schoorsg
-    </a>
+  <div class="section-container">
+    <div class="contact-card reveal">
+      <div class="contact-left">
+        <span class="section-eyebrow" data-i18n="contact_eyebrow">Inquiries &amp; Acquisitions</span>
+        <h2 data-i18n="contact_h">Get in Touch</h2>
+        <p class="contact-note" data-i18n="contact_note">Interested in an original work, curious about availability, or simply want to share a thought? Most pieces not marked as sold are available directly from the studio. Send an email or reach out on Instagram.</p>
+        <div class="contact-email-row">
+          <a class="contact-email" href="mailto:eastwickworks@gmail.com">eastwickworks@gmail.com</a>
+          <button class="copy-btn" id="copy-email-btn" onclick="copyEmail()" data-i18n="copy_email">Copy address</button>
+        </div>
+      </div>
+      <div class="contact-right">
+        <div class="contact-detail-block">
+          <span class="cd-k" data-i18n="contact_loc_k">Studio Location</span>
+          <p>2260 Westerlo · <span data-i18n="country">Belgium</span></p>
+        </div>
+        <div class="contact-detail-block">
+          <span class="cd-k">Instagram</span>
+          <a class="insta-link" href="https://www.instagram.com/eastwick_works/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>
+            @eastwick_works
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-
 <footer>
-  <img src="images/logo.png" alt="">
-  <span>© <span id="year"></span> Eastwick Works</span>
-  <span class="foot-right" data-i18n="foot_works"></span>
+  <div class="footer-left">
+    <img src="images/logo.png" alt="" onerror="imgFallback(this)">
+    <span>© <span id="year"></span> Eastwick Works · Geert Schoors</span>
+  </div>
+  <span data-i18n="foot_works">Drawings &amp; paintings on paper</span>
 </footer>
-
 <!-- ============ LIGHTBOX ============ -->
 <div id="lightbox" role="dialog" aria-modal="true" aria-label="Artwork viewer">
-  <button class="lb-btn" id="lb-close" aria-label="Close">×</button>
-  <button class="lb-btn" id="lb-prev" aria-label="Previous">‹</button>
-  <img id="lb-img" src="" alt="">
+  <div class="lb-topbar">
+    <span id="lb-counter">1 / 1</span>
+    <div class="lb-top-actions">
+      <button class="lb-tool-btn" id="lb-mat-btn" onclick="toggleLbMat()" data-i18n="lb_toggle_mat">Toggle Frame</button>
+      <button class="lb-tool-btn" id="lb-close" aria-label="Close">✕</button>
+    </div>
+  </div>
+  <div class="lb-stage" id="lb-stage">
+    <button class="lb-nav-btn" id="lb-prev" aria-label="Previous">‹</button>
+    <div class="lb-art-frame" id="lb-frame">
+      <img id="lb-img" src="" alt="" onerror="imgFallback(this)">
+    </div>
+    <button class="lb-nav-btn" id="lb-next" aria-label="Next">›</button>
+  </div>
   <div id="lb-caption"></div>
-  <button class="lb-btn" id="lb-next" aria-label="Next">›</button>
 </div>
-
 <script src="works.js"></script>
 <script>
-/* ================= i18n ================= */
+/* ================= Hybrid Local/Live Image Resolver =================
+   On eastwickworks.github.io all images load via relative paths.
+   When previewing index.html locally (file:// or localhost), artwork thumbs/large
+   resolve directly from eastwickworks.github.io (falling back to local images/
+   if a newly added batch image only exists locally). */
+const IS_LOCAL_PREVIEW = location.protocol === "file:" || location.hostname === "localhost" || location.hostname === "127.0.0.1";
+function artUrl(relPath) {
+  return IS_LOCAL_PREVIEW ? ("https://eastwickworks.github.io/" + relPath) : relPath;
+}
+function imgFallback(img, localRel) {
+  if (!img || img.dataset.fallbackApplied) return;
+  img.dataset.fallbackApplied = "1";
+  if (localRel && img.src.startsWith("https://eastwickworks.github.io/")) {
+    img.src = localRel;
+    return;
+  }
+  const raw = img.getAttribute("src");
+  if (raw && !raw.startsWith("http")) {
+    img.src = "https://eastwickworks.github.io/" + raw.replace(/^\//, "");
+  }
+}
+/* ================= i18n (EN & NL, Brand Voice, Zero Em Dashes) ================= */
 const I18N = {
   en: {
     nav_featured: "Featured",
     nav_portfolio: "Portfolio",
-    nav_profile: "Profile",
+    nav_profile: "The Artist",
     nav_contact: "Contact",
+    hero_kicker: "Studio Archive · Westerlo, Belgium",
     hero_by: "by Geert Schoors",
-    hero_lede: "Drawings and paintings on paper — expressive faces, strange creatures and everyday scenes, in color and black & white.",
-    hero_cta1: "View the portfolio",
-    hero_cta2: "Get in touch",
-    featured_h: "From the collection",
+    hero_medium: "Works on Paper",
+    hero_lede: "Expressive faces, strange creatures, and everyday absurdities. Drawn and painted on paper, in bold colour and stark black & white.",
+    hero_subnote: "Every character starts as an impulse on blank paper and stays until it looks back with a story of its own.",
+    hero_cta1: "Explore the Collection",
+    hero_cta2: "Inquire & Contact",
+    hero_caption_meta: "Pastel on paper · Signature piece",
+    stat_total: "Works on Paper",
+    stat_color: "Colour",
+    stat_bw: "Black & White",
+    stat_sketch: "Sketches",
+    featured_eyebrow: "Curated Highlights",
+    featured_h: "From the Collection",
+    featured_note: "Eight personal favourites from the studio. A quick introduction to the faces, figures, and dry humour that run through the archive.",
+    portfolio_eyebrow: "Complete Archive",
     portfolio_h: "Portfolio",
-    portfolio_note: "Welcome to my portfolio. Here you can find a selection of the works I have completed, ranging wildly in size, color, materials and level of detail. All drawings and paintings are done on paper. Click on a work to see its title and dimensions.",
-    profile_h: "Profile",
-    contact_h: "Contact",
+    portfolio_note: "Every piece here lives on paper, though rarely quietly. From pocket-sized ink sketches to metre-wide pastel and mixed-media works, nothing follows a fixed formula for long. Browse by category or search by title, and click any work for its full view and exact dimensions.",
+    search_placeholder: "Search by title...",
+    search_empty: "No works match that title. Try another word or switch category.",
+    profile_eyebrow: "Behind the Paper",
+    profile_h: "The Artist",
+    profile_quote: "“Once I discovered I like to draw, blank paper stopped being safe.”",
+    fact_medium_k: "Surface",
+    fact_medium_v: "100% Paper",
+    fact_academy_k: "Training",
+    fact_academy_v: "Fine Arts, Herentals",
+    fact_studio_k: "Studio",
+    fact_archive_k: "Collection",
+    contact_eyebrow: "Inquiries & Acquisitions",
+    contact_h: "Get in Touch",
+    contact_note: "Interested in an original work, curious about availability, or simply want to share a thought? Most pieces not marked as sold are available directly from the studio. Send an email or reach out on Instagram.",
+    contact_loc_k: "Studio Location",
+    copy_email: "Copy address",
+    copied_email: "Copied!",
     country: "Belgium",
-    foot_works: "drawings & paintings on paper",
+    foot_works: "Drawings & paintings on paper",
     sold: "Sold",
+    available_inquire: "Original available · Inquire",
+    lb_toggle_mat: "Toggle Frame",
     works_count: "works",
-    cats: { color: "Color", bw: "Black & White", sketch: "Sketches" },
+    cats: { color: "Colour", bw: "Black & White", sketch: "Sketches", all: "All Works" },
     bio: [
-      "What started with doodling weird and nonsensical sketches on post-it notes and on the backs of magazines, has blossomed into a deep rooted passion for the visual arts.",
-      "After having honed my drawing skills for seven years at the Fine Arts Academy of Herentals, I can tentatively start calling myself an artist.",
-      "And since one of the joys of being an artist is to share your art with the world, I have posted my ever-growing collection online for all eyes to see. Enjoy!"
+      "It started in the margins: weird faces on Post-it notes, questionable creatures on the backs of magazines, and whatever else happened whenever a pen was left unattended. What began as restless doodling slowly turned into a deep-rooted passion for the visual arts.",
+      "After seven years of honing my drawing skills at the Fine Arts Academy of Herentals, I feel I can tentatively start calling myself an artist. Paper remains my medium of choice, whether a piece asks for a rapid ink sketch or weeks of layered pastel and paint until a character finally stares back properly.",
+      "Half the joy of making strange things is letting other people look at them. I have put my ever-growing collection online for all eyes to see. Have a look around and enjoy!"
     ]
   },
   nl: {
@@ -549,33 +1688,84 @@ const I18N = {
     nav_portfolio: "Portfolio",
     nav_profile: "Profiel",
     nav_contact: "Contact",
+    hero_kicker: "Kunst op papier · Westerlo",
     hero_by: "door Geert Schoors",
-    hero_lede: "Tekeningen en schilderijen op papier — expressieve gezichten, vreemde wezens en alledaagse taferelen, in kleur en zwart-wit.",
+    hero_medium: "Tekeningen & schilderijen",
+    hero_lede: "Tekeningen en schilderijen op papier: expressieve gezichten, vreemde wezens en alledaagse taferelen, in kleur en zwart-wit.",
+    hero_subnote: "Van snelle schetsen met pen en inkt tot uitgewerkte stukken op groot formaat.",
     hero_cta1: "Bekijk het portfolio",
     hero_cta2: "Neem contact op",
+    hero_caption_meta: "Pastel op papier",
+    stat_total: "Werken op papier",
+    stat_color: "Kleur",
+    stat_bw: "Zwart-wit",
+    stat_sketch: "Schetsen",
+    featured_eyebrow: "Selectie",
     featured_h: "Uit de collectie",
-    portfolio_note: "Dit portfolio omvat een greep uit mijn collectie. De werken variëren sterk in grootte, kleur, gebruikte materialen en detailgraad. Alle werken zijn gemaakt op papier. Klik op een werk om titel en afmetingen te zien.",
+    featured_note: "Een eerste greep uit mijn werk: acht uiteenlopende stukken in kleur, zwart-wit en schets.",
+    portfolio_eyebrow: "Volledig overzicht",
     portfolio_h: "Portfolio",
+    portfolio_note: "Dit portfolio omvat een ruime greep uit mijn collectie. De werken variëren sterk in formaat, kleur, gebruikte materialen en detailgraad. Alle tekeningen en schilderijen zijn gemaakt op papier. Filter op categorie of zoek op titel, en klik op een werk om het groter te bekijken samen met de afmetingen.",
+    search_placeholder: "Zoek op titel...",
+    search_empty: "Geen werken gevonden met deze titel.",
+    profile_eyebrow: "Over mij",
     profile_h: "Profiel",
+    profile_quote: "“Wat begon met vreemde krabbels op post-its en tijdschriften, groeide uit tot een blijvende passie.”",
+    fact_medium_k: "Materiaal",
+    fact_medium_v: "Op papier",
+    fact_academy_k: "Opleiding",
+    fact_academy_v: "Academie Herentals",
+    fact_studio_k: "Locatie",
+    fact_archive_k: "Collectie",
+    contact_eyebrow: "Vragen & interesse",
     contact_h: "Contact",
+    contact_note: "Heb je een vraag over een werk, wil je weten of een origineel nog beschikbaar is, of laat je gewoon graag weten wat je ervan vindt? Stuur gerust een mailtje of een bericht via Instagram.",
+    contact_loc_k: "Locatie",
+    copy_email: "Kopieer e-mail",
+    copied_email: "Gekopieerd!",
     country: "België",
-    foot_works: "tekeningen & schilderijen op papier",
+    foot_works: "Tekeningen & schilderijen op papier",
     sold: "Verkocht",
+    available_inquire: "Beschikbaar · Vraag meer info",
+    lb_toggle_mat: "Kader aan/uit",
     works_count: "werken",
-    cats: { color: "Kleur", bw: "Zwart-wit", sketch: "Schetsen" },
+    cats: { color: "Kleur", bw: "Zwart-wit", sketch: "Schetsen", all: "Alles" },
     bio: [
-      "Wat begon met het maken van bizarre en onzinnige schetsen op post-its en op de achterkant van tijdschriften, is uitgegroeid tot een diepgewortelde passie voor de beeldende kunsten.",
-      "Na zeven jaar lang mijn tekenvaardigheden te hebben ontwikkeld aan de Stedelijke Academie voor Beeldende Kunst in Herentals, kan ik mezelf stilaan een kunstenaar beginnen noemen.",
-      "En het fantastische aan kunstenaar zijn, is dat je je werken met de wereld kunt delen.",
-      "Ik heb mijn steeds groeiende collectie dan ook online gezet, zodat iedereen kan meegenieten. Veel plezier!"
+      "Wat begon met het maken van bizarre en onzinnige schetsen op post-its en op de achterkant van tijdschriften, is door de jaren heen uitgegroeid tot een diepgewortelde passie voor de beeldende kunsten.",
+      "Na zeven jaar lang mijn tekenvaardigheden te hebben bijgeschaafd aan de Stedelijke Academie voor Beeldende Kunst in Herentals, durf ik mezelf stilaan een kunstenaar te noemen. Of het nu gaat om een snelle schets of een werk waar weken kleur en detail in kruipen: elk stuk ontstaat op papier.",
+      "En het mooiste aan kunstenaar zijn, blijft dat je je werk met de wereld kunt delen. Ik heb mijn steeds groeiende collectie dan ook online gezet, zodat iedereen kan meegenieten. Veel kijkplezier!"
     ]
   }
 };
-
 let lang = localStorage.getItem("ew-lang")
   || ((navigator.language || "").toLowerCase().startsWith("nl") ? "nl" : "en");
-
-function setLang(l){
+/* ================= Dutch & Compact Measurement Formatting ================= */
+/* Lightbox full string: English shows raw ("Height: 57.2 cm ; 22.5 in"),
+   Dutch shows "Hoogte: 57,2 cm" (cm only, comma decimals, no inches). */
+function fmtDim(s) {
+  if (!s) return "";
+  if (lang !== "nl") return s.trim();
+  let d = s.split(";")[0]
+           .replace(/Height/i, "Hoogte")
+           .replace(/Width/i, "Breedte");
+  d = d.replace(/(\d)\.(\d)/g, "$1,$2");
+  return d.replace(/\s+/g, " ").trim();
+}
+/* Compact card label (e.g. "57.2 × 42 cm" in EN, "57,2 × 42 cm" in NL) */
+function fmtCompactDims(w) {
+  if (!w || !w.h || !w.w) return "";
+  const hm = w.h.match(/([\d.]+)\s*cm/i);
+  const wm = w.w.match(/([\d.]+)\s*cm/i);
+  if (!hm || !wm) return "";
+  let hVal = hm[1], wVal = wm[1];
+  if (lang === "nl") {
+    hVal = hVal.replace(".", ",");
+    wVal = wVal.replace(".", ",");
+  }
+  return `${hVal} × ${wVal} cm`;
+}
+/* ================= Language Switcher ================= */
+function setLang(l) {
   lang = l;
   localStorage.setItem("ew-lang", l);
   document.documentElement.lang = l;
@@ -586,111 +1776,218 @@ function setLang(l){
   });
   document.getElementById("lang-en").classList.toggle("active", l === "en");
   document.getElementById("lang-nl").classList.toggle("active", l === "nl");
+  document.getElementById("search-input").placeholder = t.search_placeholder;
   document.getElementById("bio").innerHTML = t.bio.map(p => `<p>${p}</p>`).join("");
+  document.getElementById("fact-count").textContent = `${WORKS.length} ${t.works_count}`;
+  renderHeroStats();
+  renderFeatured();
   renderTabs();
-  if (lbList) updateLightbox(); // refresh SOLD label / counter wording
+  renderGrid();
+  if (lbList) updateLightbox();
 }
-
-/* ================= portfolio grid ================= */
-const CATS = ["color", "bw", "sketch"];
-let activeCat = "color";
-
-function renderTabs(){
+function renderHeroStats() {
   const t = I18N[lang];
-  document.getElementById("tabs").innerHTML = CATS.map(c => {
-    const n = WORKS.filter(w => w.cat === c).length;
-    return `<button class="tab ${c === activeCat ? "active" : ""}" onclick="setCat('${c}')">${t.cats[c]}<small>${n}</small></button>`;
+  const nColor = WORKS.filter(w => w.cat === "color").length;
+  const nBw = WORKS.filter(w => w.cat === "bw").length;
+  const nSketch = WORKS.filter(w => w.cat === "sketch").length;
+  document.getElementById("hero-stats").innerHTML = `
+    <div class="stat-item"><span class="stat-num">${WORKS.length}</span><span class="stat-label">${t.stat_total}</span></div>
+    <div class="stat-item"><span class="stat-num">${nColor}</span><span class="stat-label">${t.stat_color}</span></div>
+    <div class="stat-item"><span class="stat-num">${nBw}</span><span class="stat-label">${t.stat_bw}</span></div>
+    <div class="stat-item"><span class="stat-num">${nSketch}</span><span class="stat-label">${t.stat_sketch}</span></div>
+  `;
+}
+/* ================= Featured Strip ================= */
+function renderFeatured() {
+  const t = I18N[lang];
+  const bySlug = Object.fromEntries(WORKS.map(w => [w.slug, w]));
+  const items = FEATURED.map(s => bySlug[s]).filter(Boolean);
+  document.getElementById("featured-strip").innerHTML = items.map((w, i) => {
+    const num = String(i + 1).padStart(2, "0");
+    const cDims = fmtCompactDims(w);
+    return `
+      <figure class="feat-card" onclick="openLightbox('featured', ${i})">
+        <div class="feat-mat">
+          <span class="feat-num">${num}</span>
+          ${w.sold ? `<span class="feat-sold">${t.sold}</span>` : ""}
+          <img src="${artUrl(`images/thumb/${w.slug}.jpg`)}" alt="‘${w.title}’" loading="lazy" onerror="imgFallback(this, 'images/thumb/${w.slug}.jpg')">
+        </div>
+        <figcaption class="feat-meta">
+          <span class="feat-title">‘${w.title}’</span>
+          <span class="feat-dims">${cDims}</span>
+        </figcaption>
+      </figure>`;
   }).join("");
 }
-
-function setCat(c){
+function scrollFeatured(dir) {
+  const strip = document.getElementById("featured-strip");
+  const step = Math.max(300, Math.round(strip.clientWidth * 0.65));
+  strip.scrollBy({ left: dir * step, behavior: "smooth" });
+}
+/* ================= Portfolio Grid (Row-Ordered Masonry) ================= */
+const CATS = ["color", "bw", "sketch", "all"];
+let activeCat = "color";
+let searchQuery = "";
+let preferredCols = 4;
+let currentFilteredWorks = [];
+function getFilteredWorks() {
+  const q = searchQuery.trim().toLowerCase();
+  return WORKS.filter(w => {
+    const matchCat = (activeCat === "all") || (w.cat === activeCat);
+    const matchQ = !q || w.title.toLowerCase().includes(q) || w.slug.includes(q);
+    return matchCat && matchQ;
+  });
+}
+function renderTabs() {
+  const t = I18N[lang];
+  document.getElementById("tabs").innerHTML = CATS.map(c => {
+    const n = (c === "all") ? WORKS.length : WORKS.filter(w => w.cat === c).length;
+    return `<button class="tab ${c === activeCat ? "active" : ""}" role="tab" aria-selected="${c === activeCat}" onclick="setCat('${c}')">${t.cats[c]}<small>${n}</small></button>`;
+  }).join("");
+}
+function setCat(c) {
   activeCat = c;
   renderTabs();
   renderGrid();
 }
-
-function renderGrid(){
-  const works = WORKS.filter(w => w.cat === activeCat);
-  document.getElementById("grid").innerHTML = works.map((w, i) => `
-    <figure class="work" onclick="openLightbox('${activeCat}',${i})">
-      <img src="images/thumb/${w.slug}.jpg" alt="‘${w.title}’" loading="lazy">
-      ${w.sold ? `<span class="sold-dot" data-sold></span>` : ""}
-      <figcaption class="cap">‘${w.title}’</figcaption>
-    </figure>`).join("");
-  document.querySelectorAll("[data-sold]").forEach(el => el.textContent = I18N[lang].sold);
+function onSearchInput(val) {
+  searchQuery = val || "";
+  document.getElementById("search-clear").classList.toggle("visible", searchQuery.length > 0);
+  renderGrid();
 }
-
-/* ================= featured strip ================= */
-function renderFeatured(){
-  const bySlug = Object.fromEntries(WORKS.map(w => [w.slug, w]));
-  const items = FEATURED.map(s => bySlug[s]).filter(Boolean);
-  document.getElementById("featured-strip").innerHTML = items.map((w, i) => `
-    <figure onclick="openLightbox('featured',${i})">
-      <img src="images/thumb/${w.slug}.jpg" alt="‘${w.title}’" loading="lazy">
-      <figcaption>‘${w.title}’</figcaption>
-    </figure>`).join("");
+function clearSearch() {
+  const inp = document.getElementById("search-input");
+  inp.value = "";
+  onSearchInput("");
+  inp.focus();
 }
-
-/* ================= lightbox ================= */
+function setCols(n) {
+  preferredCols = n;
+  document.getElementById("cols-3").classList.toggle("active", n === 3);
+  document.getElementById("cols-4").classList.toggle("active", n === 4);
+  renderGrid();
+}
+function getEffectiveCols() {
+  const w = window.innerWidth;
+  if (w <= 560) return 1;
+  if (w <= 860) return 2;
+  if (w <= 1120) return Math.min(3, preferredCols);
+  return preferredCols;
+}
+function renderGrid() {
+  const t = I18N[lang];
+  const grid = document.getElementById("grid");
+  currentFilteredWorks = getFilteredWorks();
+  document.getElementById("portfolio-summary").textContent =
+    `${t.cats[activeCat]} · ${currentFilteredWorks.length} ${t.works_count}`;
+  if (currentFilteredWorks.length === 0) {
+    grid.style.setProperty("--cols", 1);
+    grid.innerHTML = `<div class="empty-state">${t.search_empty}</div>`;
+    return;
+  }
+  const numCols = getEffectiveCols();
+  grid.style.setProperty("--cols", numCols);
+  /* Distribute items left-to-right across columns so item #1, #2, #3, #4
+     sit across the top row in exact works.js order. */
+  const cols = Array.from({ length: numCols }, () => []);
+  currentFilteredWorks.forEach((w, i) => {
+    cols[i % numCols].push({ w, i });
+  });
+  grid.innerHTML = cols.map(colItems => `
+    <div class="masonry-col">
+      ${colItems.map(({ w, i }) => {
+        const idxStr = String(i + 1).padStart(2, "0");
+        const cDims = fmtCompactDims(w);
+        return `
+          <figure class="work-card" onclick="openLightbox('grid', ${i})">
+            <div class="work-img-wrap">
+              <img src="${artUrl(`images/thumb/${w.slug}.jpg`)}" alt="‘${w.title}’" loading="lazy" onerror="imgFallback(this, 'images/thumb/${w.slug}.jpg')">
+              ${w.sold ? `<span class="work-sold-badge">${t.sold}</span>` : ""}
+            </div>
+            <figcaption class="work-placard">
+              <div class="work-title-group">
+                <span class="work-idx">${idxStr}</span>
+                <span class="work-title">‘${w.title}’</span>
+              </div>
+              ${cDims ? `<span class="work-size-pill">${cDims}</span>` : ""}
+            </figcaption>
+          </figure>`;
+      }).join("")}
+    </div>
+  `).join("");
+}
+let resizeTimer = null;
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(renderGrid, 140);
+});
+/* ================= Lightbox Viewer ================= */
 let lbList = null, lbIdx = 0;
-
-function listFor(ctx){
-  if (ctx === "featured"){
+function listFor(ctx) {
+  if (ctx === "featured") {
     const bySlug = Object.fromEntries(WORKS.map(w => [w.slug, w]));
     return FEATURED.map(s => bySlug[s]).filter(Boolean);
   }
+  if (ctx === "hero") {
+    return [{ slug: "__hero__", title: "True Colors", h: "", w: "", sold: false, isHero: true }];
+  }
+  if (ctx === "grid") {
+    return currentFilteredWorks;
+  }
   return WORKS.filter(w => w.cat === ctx);
 }
-
-function openLightbox(ctx, i){
+function openHeroLightbox() {
+  openLightbox("hero", 0);
+}
+function openLightbox(ctx, i) {
   lbList = listFor(ctx);
   lbIdx = i;
   document.getElementById("lightbox").classList.add("open");
   document.body.style.overflow = "hidden";
   updateLightbox();
 }
-
-/* Dutch measurement formatting: Hoogte/Breedte, cm only, comma decimals, no inch conversion */
-function fmtDim(s){
-  if (lang !== "nl") return s;
-  let d = s.split(";")[0]                       // drop the "; X in" conversion
-           .replace(/Height/i, "Hoogte")
-           .replace(/Width/i, "Breedte");
-  d = d.replace(/(\d)\.(\d)/g, "$1,$2");       // decimal point -> comma
-  return d.replace(/\s+/g, " ").trim();
+function toggleLbMat() {
+  document.getElementById("lb-frame").classList.toggle("unframed");
 }
-
-function updateLightbox(){
+function updateLightbox() {
   const w = lbList[lbIdx];
   if (!w) return;
   const t = I18N[lang];
   const img = document.getElementById("lb-img");
-  img.src = `images/large/${w.slug}.jpg`;
+  delete img.dataset.fallbackApplied;
+  img.src = w.isHero ? "images/hero.jpg" : artUrl(`images/large/${w.slug}.jpg`);
   img.alt = `‘${w.title}’`;
+  const showNav = lbList.length > 1;
+  document.getElementById("lb-prev").style.display = showNav ? "flex" : "none";
+  document.getElementById("lb-next").style.display = showNav ? "flex" : "none";
+  document.getElementById("lb-counter").textContent = `${lbIdx + 1} / ${lbList.length}`;
   const dims = [w.h, w.w].filter(Boolean).map(fmtDim).join("<br>");
+  const mailSubj = encodeURIComponent(`Inquiry: ‘${w.title}’ · Eastwick Works`);
   document.getElementById("lb-caption").innerHTML = `
     <div class="lb-title">‘${w.title}’</div>
     ${dims ? `<div class="lb-dims">${dims}</div>` : ""}
-    ${w.sold ? `<span class="lb-sold">${t.sold}</span>` : ""}
-    <div class="lb-count">${lbIdx + 1} / ${lbList.length}</div>`;
+    <div class="lb-status-row">
+      ${w.sold
+        ? `<span class="lb-sold">${t.sold}</span>`
+        : `<a class="lb-inquire" href="mailto:eastwickworks@gmail.com?subject=${mailSubj}">${t.available_inquire} →</a>`
+      }
+    </div>`;
 }
-
-function closeLightbox(){
+function closeLightbox() {
   document.getElementById("lightbox").classList.remove("open");
   document.body.style.overflow = "";
   lbList = null;
 }
-function lbStep(d){
-  if (!lbList) return;
+function lbStep(d) {
+  if (!lbList || lbList.length <= 1) return;
   lbIdx = (lbIdx + d + lbList.length) % lbList.length;
   updateLightbox();
 }
-
 document.getElementById("lb-close").onclick = closeLightbox;
 document.getElementById("lb-prev").onclick = e => { e.stopPropagation(); lbStep(-1); };
 document.getElementById("lb-next").onclick = e => { e.stopPropagation(); lbStep(1); };
-document.getElementById("lightbox").addEventListener("click", e => {
-  if (e.target.id === "lightbox") closeLightbox();
+document.getElementById("lb-stage").addEventListener("click", e => {
+  if (e.target.id === "lb-stage") closeLightbox();
 });
 document.addEventListener("keydown", e => {
   if (!lbList) return;
@@ -698,32 +1995,44 @@ document.addEventListener("keydown", e => {
   if (e.key === "ArrowLeft") lbStep(-1);
   if (e.key === "ArrowRight") lbStep(1);
 });
-/* swipe */
 let touchX = null;
-document.getElementById("lightbox").addEventListener("touchstart", e => touchX = e.touches[0].clientX, {passive:true});
+document.getElementById("lightbox").addEventListener("touchstart", e => touchX = e.touches[0].clientX, { passive: true });
 document.getElementById("lightbox").addEventListener("touchend", e => {
   if (touchX === null) return;
   const dx = e.changedTouches[0].clientX - touchX;
   if (Math.abs(dx) > 45) lbStep(dx < 0 ? 1 : -1);
   touchX = null;
-}, {passive:true});
-
-/* ================= reveal on scroll ================= */
+}, { passive: true });
+/* ================= Copy Email Helper ================= */
+function copyEmail() {
+  const btn = document.getElementById("copy-email-btn");
+  const t = I18N[lang];
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText("eastwickworks@gmail.com").then(() => {
+      btn.textContent = t.copied_email;
+      setTimeout(() => { btn.textContent = I18N[lang].copy_email; }, 2000);
+    });
+  }
+}
+/* ================= Scroll & Reveal Effects ================= */
+window.addEventListener("scroll", () => {
+  document.getElementById("site-header").classList.toggle("scrolled", window.scrollY > 24);
+}, { passive: true });
 const io = new IntersectionObserver(entries => {
-  entries.forEach(en => { if (en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } });
-}, { threshold: .12 });
+  entries.forEach(en => {
+    if (en.isIntersecting) {
+      en.target.classList.add("in");
+      io.unobserve(en.target);
+    }
+  });
+}, { threshold: 0.10 });
 document.querySelectorAll(".reveal").forEach(el => io.observe(el));
-
-/* ================= init ================= */
+/* ================= Init ================= */
 document.getElementById("year").textContent = new Date().getFullYear();
-renderFeatured();
-renderGrid();
 setLang(lang);
 </script>
-
 <!-- Visitor statistics (GoatCounter, free & privacy-friendly).
      Dashboard: https://eastwickworks.goatcounter.com -->
 <script data-goatcounter="https://eastwickworks.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-
 </body>
 </html>
