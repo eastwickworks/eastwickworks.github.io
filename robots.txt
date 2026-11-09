@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /stories/
 Allow: /
 
 Sitemap: https://eastwickworks.github.io/sitemap.xml
